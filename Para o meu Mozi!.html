@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aniversário de Namoro</title>
+    <style>
+        body {
+            background-color: #ec5353; /* Vermelho */
+            background-image: url('Imagem_de_coração.png'); /* Caminho para a imagem do coração */
+            background-size: cover;
+            background-repeat: repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            color: #000000; /* Preto para o texto */
+        }
+
+        main {
+            background-color: rgba(255,255,255,0.8); /* Branco com transparência */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px; /* Limita a largura do conteúdo */
+        }
+
+        button {
+            background-color: #ec5353; /* Vermelho */
+            color: #ffffff; /* Branco */
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #cc0000; /* Vermelho mais escuro (hover) */
+        }
+
+        .notificacao {
+            background-color: #ec5353; /* Vermelho */
+            color: #ffffff; /* Branco */
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Mais um mês de Namoro! ihull😋</h1>
+        <p>Hoje celebramos mais um mês juntos, cheio de carinho e amor, todos os momentos ao seu lado são especiais. Vc é a melhor, é o meu incrível mundo🌎.</p>
+        
+        <p>Você é a pessoa mais importante na minha vida, e eu amo estar ao seu lado. Vc merece até uma 4090 ksks.</p>
+        
+        <p>Obs: Vc não toma banho, mas eu te amo mil milhões✨.</p>
+        
+        <!-- Botão de Pedido de Casamento -->
+        <button onclick="pedidoDeCasamento()">Quer fazer um lanchinho cmg?</button>
+
+        <!-- Caixa de Notificação -->
+        <div class="notificacao" id="notificacao"></div>
+    </main>
+
+    <footer>
+        <p>Com amor, Dan ❤️</p>
+    </footer>
+
+    <script>
+        function mostrarNotificacao(mensagem) {
+            var notificacao = document.getElementById("notificacao");
+            notificacao.innerHTML = mensagem;
+            notificacao.style.display = "block";
+        }
+
+        function pedidoDeCasamento() {
+            var resposta = prompt("Você aceita comer pastel comigo? (Responda sim ou não)");
+
+            if (resposta && resposta.toLowerCase() === "sim") {
+                mostrarNotificacao("Parabéns! Você fez deste o dia mais especial da minha vida!");
+            } else {
+                mostrarNotificacao("Tudo bem, não importa, vc vai comer mesmo assim! grr");
+            }
+        }
+    </script>
+</body>
+</html>
